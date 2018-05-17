@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "cfd7acd9-a05e-4c92-af88-c4a83e939a85",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "tournament_btn": {
+      "ver": "1.0.3",
+      "uuid": "838cc852-3a15-45f9-aacd-36d138b27d76",
+      "rawTextureUuid": "cfd7acd9-a05e-4c92-af88-c4a83e939a85",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 413,
+      "height": 116,
+      "rawWidth": 413,
+      "rawHeight": 116,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "girl_show",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 6.5,
+  "sample": 4,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "75f70eb2-8266-4ad9-a3e1-845efa93ca20"
+            }
+          },
+          {
+            "frame": 2.75,
+            "value": {
+              "__uuid__": "4accd0a8-5e32-4214-8bcb-9736a433334a"
+            }
+          },
+          {
+            "frame": 3,
+            "value": {
+              "__uuid__": "75f70eb2-8266-4ad9-a3e1-845efa93ca20"
+            }
+          },
+          {
+            "frame": 6.25,
+            "value": {
+              "__uuid__": "312a1022-1b9c-4fcb-9d37-32a8bc077a75"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

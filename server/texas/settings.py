@@ -25,31 +25,31 @@ SERVERS = {
             }
         ],
     },
-    'hall': {
-        'name': '三组广场',
-        'root_port': 10001,
-        'web_port': 10002,
-        'log': 'logs/hall.log',
-        'app': 'hall',
-        'db': True,
-        'cache': True,
-    },
-    'game': {
-        'name': 'gamexxx',
-        'web_port': 10003,  # web_socket
-        'server': 'servers.game_server',
-        'log': 'logs/game.log',
-        'db': True,
-        'mem': True,
-        'app': 'game',
-        #'reload': 'app/game/reload',
-        'remote_list': [
-            {
-                'root_port': 10001,
-                'root_name': 'hall'
-            }
-        ],
-    }
+    # 'hall': {
+    #     'name': '三组广场',
+    #     'root_port': 10001,
+    #     'web_port': 10002,
+    #     'log': 'logs/hall.log',
+    #     'app': 'hall',
+    #     'db': True,
+    #     'cache': True,
+    # },
+    # 'game': {
+    #     'name': 'gamexxx',
+    #     'web_port': 10003,  # web_socket
+    #     'server': 'servers.game_server',
+    #     'log': 'logs/game.log',
+    #     'db': True,
+    #     'mem': True,
+    #     'app': 'game',
+    #     #'reload': 'app/game/reload',
+    #     'remote_list': [
+    #         {
+    #             'root_port': 10001,
+    #             'root_name': 'hall'
+    #         }
+    #     ],
+    # }
 }
 
 DB = {

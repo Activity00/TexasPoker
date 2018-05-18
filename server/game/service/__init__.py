@@ -7,3 +7,4 @@
 
 from game.service.localservice import *
 from game.service.rootservice import *
+from game.service.remoteservice import *

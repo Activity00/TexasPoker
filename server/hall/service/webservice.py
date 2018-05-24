@@ -73,4 +73,17 @@ class EnterRoom(BaseHandler):
 
     @tornado.web.asynchronous
     def get(self):
-       pass
+        room_id = self.get_argument('room_id')
+        df = ScatObject.root.call_child_by_name('game', 'enter_room', room_id)
+        df.addCallback(self.on_response)
+        df.addErrback(self.on_error)
+
+    def on_response(self, response):
+        result = json.loads(response)
+        self.write(APIResponseSuccess(result))
+        self.finish()
+
+    def on_error(self, response):
+        print(response)
+        self.write(APIResponseError(500, message='进入错误', errors=str(response)))
+        self.finish()

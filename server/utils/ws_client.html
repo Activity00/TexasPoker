@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Websocket Utils</title>
+</head>
+
+<body onload='onLoad();'>
+
+WS_URL: <input type="text" id="url" value="ws://127.0.0.1:10003/game/"/>
+<input type="button" onclick="connectServer();" value="连接"/><br/><br/>
+Message to send: <input type="text" id="msg"/>
+<input type="button" onclick="sendMsg();" value="发送"/><br/><br/>
+<textarea id="content" style="width: 100%;"></textarea>
+</body>
+
+<script type="text/javascript">
+    var ws = null;
+    var content = document.getElementById("content");
+
+    function connectServer() {
+        ws = new WebSocket("ws://127.0.0.1:10003/game/");
+        ws.onmessage = function (e) {
+            alert("ss");
+            content.text += e.data + "\n";
+        };
+        ws.onerror = function (e) {
+            alert(e.data);
+        }
+    }
+
+    function onLoad() {
+        ws = new WebSocket("ws://127.0.0.1:10003/game/");
+        ws.onmessage = function (e) {
+            content.value += e.data + "\n";
+        };
+        ws.onerror = function (e) {
+            content.value += e.data + "\n";
+        }
+    }
+
+    function sendMsg() {
+        if (ws === null) {
+            alert("还没有连接");
+            return
+        }
+        var json_obj;
+        try {
+           json_obj = JSON.parse(document.getElementById('msg').value);
+        }
+        catch(e){
+            alert(e);
+            return;
+        }
+        ws.send(JSON.stringify(json_obj));
+    }
+</script>
+</html>

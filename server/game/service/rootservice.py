@@ -16,5 +16,6 @@ def get_token(player_id, life_time):
     token = token_mgr.produce_token(player_id, life_time)
     return json.dumps({'token': token})
 
+
 if __name__ == '__main__':
     pass

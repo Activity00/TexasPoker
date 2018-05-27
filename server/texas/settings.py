@@ -26,7 +26,7 @@ SERVERS = {
         ],
     },
     'hall': {
-        'name': '三组广场',
+        'name': 'texas_hall',
         'root_port': 10001,
         'web_port': 10002,
         'log': 'logs/hall.log',
@@ -35,7 +35,7 @@ SERVERS = {
         'cache': True,
     },
     'game': {
-        'name': 'gamexxx',
+        'name': 'game',
         'web_port': 10003,  # web_socket
         'server': 'servers.game_server',
         'log': 'logs/game.log',

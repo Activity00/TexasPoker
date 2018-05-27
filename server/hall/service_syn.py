@@ -38,8 +38,13 @@ class Login(BaseHandler):
     def get(self):
         df = ScatObject.root.call_child_by_name('account', 'get_account_info', self.get_argument('account'))
         df.addCallback(self.on_response)
+        df.addErrback(self.on_error)
 
     def on_response(self, response):
         result = json.loads(response)
         self.write(APIResponseSuccess(result))
+        self.finish()
+
+    def on_error(self, error):
+        print(type(error), '', error)
         self.finish()

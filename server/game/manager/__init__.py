@@ -4,9 +4,9 @@
 @author: 武明辉 
 @time: 2018/5/7 16:13
 """
-from game.tournament_manager.player_manager import PlayerManager
-from game.tournament_manager.room_manager import RoomManager
-from game.tournament_manager.std_manager import STDManager
+from game.manager.player_manager import PlayerManager
+from game.manager.room_manager import RoomManager
+from game.manager.std_manager import STDManager
 
 
 class GlobalManager:

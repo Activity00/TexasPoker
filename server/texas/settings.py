@@ -42,7 +42,7 @@ SERVERS = {
         'db': True,
         'mem': True,
         'app': 'game',
-        #'reload': 'app/game/reload',
+        # 'reload': 'app/game/reload',
         'remote_list': [
             {
                 'root_port': 10001,
